@@ -23,9 +23,9 @@ type OrderLineItem struct {
 	ProductIdentifier string      `json:"product_identifier,omitempty"`
 	Description       string      `json:"description,omitempty"`
 	ProductTaxCode    string      `json:"product_tax_code,omitempty"`
-	UnitPrice         float64     `json:"unit_price,omitempty,string"`
+	UnitPrice         float64     `json:"unit_price,string"`
 	Discount          float64     `json:"discount,omitempty,string"`
-	SalesTax          float64     `json:"sales_tax,omitempty,string"`
+	SalesTax          float64     `json:"sales_tax,string"`
 }
 
 // ShowOrder shows an existing order in TaxJar․
